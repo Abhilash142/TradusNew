@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="10">
+<listeners>
+		<listener class-name="com.tradus.core.TestListenersClass" />
+		<listener class-name="com.tradus.core.AnnotationTransformer" />
+	</listeners>
+  <test  name="Test" parallel="classes" thread-count="4">
+    <classes>
+     <class name="smoke_test_TPRO.SignUpPackageTPROTest_New"/>
+      <class name="smoke_test_TPRO.SignUpDetailsTPROTest_New"/>
+      <class name="smoke_test_TPRO.SignUpAccountsTProTest_New"/>
+      <class name="smoke_test_TPRO.LandingTradusProTest"/>
+     
+      <class name="smoke_test_TPRO.LoginTradusPROTest"/>
+      <class name="smoke_test_TPRO.ForgotPasswordTradusPROTest"/>
+      <class name="smoke_test_TPRO.OverviewPageTradusProTest"/>
+      <class name="smoke_test_TPRO.LeadsTradusProTest"/>
+      <class name="smoke_test_TPRO.ProfileTradusPROTest"/>
+      <class name="smoke_test_TPRO.MarketinSightsTradusProTest"/>
+      <class name="smoke_test_TPRO.MonthlyPackageTradusPROTest"/>  
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

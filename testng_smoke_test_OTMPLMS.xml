@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="10">
+	<listeners>
+		<listener class-name="com.tradus.core.TestListenersClass" />
+		<listener class-name="com.tradus.core.AnnotationTransformer" />
+	</listeners>
+  <test name="Test" parallel="classes" thread-count="4">
+    <classes>
+      <class name="smoke_test_OTMP_LMS.SignUpPackageOtomotoProfiLMSTests"/>
+      <class name="smoke_test_OTMP_LMS.SignUpDetailsOtomotoProfiLMSTest"/>
+      <class name="smoke_test_OTMP_LMS.SignUpAccountsOtomotoProfiLMSTest"/>
+      <class name="smoke_test_OTMP_LMS.ForgotPasswordOTMPLMSTest"/>
+      <class name="smoke_test_OTMP_LMS.InvoicesOtomotoProfiLMSTest"/> 
+      <class name="smoke_test_OTMP_LMS.LeadsOTMPLMSTest"/> 
+      <class name="smoke_test_OTMP_LMS.MonthlyPackageOTMPLMSTest"/> 
+      <class name="smoke_test_OTMP_LMS.OverviewOtomotoProfiLMSTest"/>
+      <class name="smoke_test_OTMP_LMS.MarketinSightsOTMPLMSTest"/>
+      <class name="smoke_test_OTMP_LMS.LoginOtomotoProfiLMSTest"/>
+      <class name="smoke_test_OTMP_LMS.ProfileOtomotoProfiLMSTest"/> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

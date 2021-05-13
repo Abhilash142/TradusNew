@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="10">
+<listeners>
+		<listener class-name="com.tradus.core.TestListenersClass" />
+		<listener class-name="com.tradus.core.AnnotationTransformer" />
+	</listeners>
+  <test name="Test" parallel="classes"  thread-count="1">
+	<classes>
+		<!-- <class name="sanity_test_TPRO.AllStockTradusPROTest"/> -->
+		<!-- <class name="sanity_test_TPRO.CreateStockTradusProTest"/> 
+		<class name="sanity_test_TPRO.SignUpConfirmationTPROTest_New" />-->
+		
+		<class name="sanity_test_TPRO.SignUpPackageTPROTest_New" />
+		<class name="sanity_test_TPRO.SignUpAccountsTProTest_New" />
+		<class name="sanity_test_TPRO.SignUpDetailsTPROTest_New" />
+		
+		<class name="sanity_test_TPRO.LandingTradusProTest" />
+		<class name="sanity_test_TPRO.LoginTradusProTest" />
+		<class name="sanity_test_TPRO.ForgotPasswordTradusPROTest" />
+		<class name="sanity_test_TPRO.OverviewPageTradusProTest" />
+		<class name="sanity_test_TPRO.MonthlyPackageTradusPROTest" />
+		<class name="sanity_test_TPRO.MarketinSightsTradusProTest" />
+		<class name="sanity_test_TPRO.ProfileTradusPROTest" />
+		<class name="sanity_test_TPRO.LeadsTradusPROTest" />
+		
+	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
