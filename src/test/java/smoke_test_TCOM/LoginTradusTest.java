@@ -28,7 +28,7 @@ public class LoginTradusTest extends BaseClass{
 	/*
 	 * Descritpion:  Verify SignUp through google Link
 	 */
-	//@Test
+	@Test
 	public void verifySignUpThroughGoogleLink() throws Exception {
 		HomeTradusPage homePageObj = new HomeTradusPage(driver);
 		LoginTradusPage loginPageObj = new LoginTradusPage(driver);
